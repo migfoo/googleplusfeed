@@ -59,16 +59,8 @@
 
 
   <div id="wrapper">
-
-	<form>
-		<p>
-			<label>Google+ Id : </label>
-			<input type="text" id="plus_id" name="plus_id" value="<?php echo $plus_id; ?>" size="30" />	
-			<button type="submit">Submit</button>
-		</p>
-	</form>
-
-    	<div id="profile-data">
+    	
+	<div id="profile-data">
 <?php
 
 // if we have data, show the output
