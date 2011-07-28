@@ -42,74 +42,77 @@
   <meta name="author" content="jesus.olivas@gmail.com">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
 <body>
-<?php
-	// read id form URL if not put your default google+ id here :
-	$plus_id = isset($_REQUEST["plus_id"])?$_REQUEST["plus_id"]:'107277908730749548010';
-	// include our scraper class
-	include_once('googleCard.php');
-	// initiate an instance of our scraper class
-	$plus = new googleCard($plus_id);
-	// enable caching (off by default)
-	$plus->cache_data = 0;
-	// do the scrape
-	$data = $plus->googleCard();
-?>
 
+  <div id="wrapper-builder">
 
-  <div id="wrapper">
+	<div id ="more-info">
+	Created by Jesus Manuel Olivas | 
+	<a href="http://twitter.com/jmolivas" target="_blank">@jmolivas </a> <br/>
+	<a id="more" href="#">more info</a>
+	<div id="info">
+		<p>
+		Based on : <br/>
+		googleCard – google+ hovercard style box in PHP <br/>
+		<a href="http://plusdevs.com/googlecard-googleplus-php-scraper/" target="_blank">
+		http://plusdevs.com/googlecard-googleplus-php-scraper/
+		</a> 
+		<br/>
+       		</p><p>
+		PlusFeed - Unofficial Google+ User Feeds <br/>
+		<a href="http://plusfeed.appspot.com/" target="_blank">
+		http://plusfeed.appspot.com/ 
+		</a>
+		<br/>
+		</p><p>
+		Using the following library to read/post Atom feed <br/>
+		<a href="http://www.scriptol.com/rss/atom-reader.php" target="_blank">
+		http://www.scriptol.com/rss/atom-reader.php 
+		</a>
+		<br/>
+		</p><p>
+		More info see blog post post : <br/>
+		<a href="http://jmolivas.com/google-plus-feed" target="_blank">
+		http://jmolivas.com/google-plus-feed
+		</a> 
+		<br/>
+		</p>
+	</div>
+	</div>
 
-	<form>
+	
+	<form id="googleplusfeed-form">
 		<p>
 			<label>Google+ Id : </label>
-			<input type="text" id="plus_id" name="plus_id" value="<?php echo $plus_id; ?>" size="30" />	
-			<button type="submit">Submit</button>
+			<input type="text" id="plus_id" name="plus_id" value="107277908730749548010" />
+			<button id="form-submit" type="button">Generate</button>
 		</p>
 	</form>
 
-    	<div id="profile-data">
-<?php
+    	<div id="googleplusfeed-widget-wrapper">
+		<iframe id="googleplusfeed-widget-frame" src="widget.php" border="1">loading...</iframe>
+	</div> 
+    
+  </div>
 
-// if we have data, show the output
-if (isset($data) && !empty($data['name']) && !empty($data['count']) && !empty($data['img']))
-{
-?>
-	<div id="plus_card">
-		<div id="plus_card_image">
-			<a href="<?php echo $data['url']; ?>">
-				<?php echo '<img src="' . $data['img'] . '" width="80" height="80" />'; ?>
-			</a>
-		</div>
-		<div id="plus_card_name_add_wrapper">
-			<div id="plus_card_name">
-				<a href="<?php echo $data['url']; ?>"><?php echo $data['name'] ?></a>
-			</div>
-			<span id="plus_card_add">
-				<a href="<?php echo $data['url']; ?>">Add to circles</a>
-			</span>
-		</div>
-		<div id="plus_card_count">
-			<p>In <?php echo $data['count']; ?> people's circles</p>
-		</div>
-	</div>
-<?php
-}
-// else show an error
-else
-{
-	echo 'Couldn\'t get data from google+';
-}
-?>
-    </div> 
-    <div id="feed-items">
-      <?php	
-	require_once("atomlib.php");
-	$url = "http://plusfeed.appspot.com/".$plus_id;
-	echo Atom_Links($url, 15);	
-      ?>
-    </div>
-  </div>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21900600-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  
 </body>
 </html>
 

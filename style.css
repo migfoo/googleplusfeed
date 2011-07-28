@@ -39,18 +39,23 @@
 	padding-bottom:10px;
 }
 
-
-
 a {
 	color: #333333;
 	text-decoration: none;
 	font-weight: bold;
 }
+
+#profile-data, #feed-items {
+	width: auto;
+	padding:2px;
+	margin:2px;
+}
+
 #plus_card {
-	width: 280px;
-	min-width: 280px;
-	max-width: 290px;
-	height: 116px;
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	height: 100px;
 	position: relative;
 	background: #fff;
 	-webkit-border-radius: 2px;
@@ -107,7 +112,7 @@ a {
 }
 
 #wrapper {
-	width: 300px;
+	width: auto;
 	padding:5px;
 	margin:5px;
 }
@@ -127,3 +132,31 @@ a:hover {
 	text-decoration:underline;
 }
 
+#info {
+	display:none;
+}
+#plus_id {
+	width:160px;
+	clear:both;
+	border:1px solid #cacaca;
+	padding:2px;
+	margin:2px;
+}
+label.error {
+	color:red;
+	clear:both;
+	display:block;
+}
+#plus_id .error {
+	border: 1px solid red;
+}
+
+
+#googleplusfeed-widget-frame {
+	border:1px;
+	width:320px;
+	height:440px;
+	overflow:hidden;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
