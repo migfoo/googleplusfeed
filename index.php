@@ -51,9 +51,8 @@
   <div id="wrapper-builder">
 
 	<div id ="more-info">
-	Created by Jesus Manuel Olivas<br/> 
-	Web : <a href="http://jmolivas.com" target="_blank">http://jmolivas.com</a> <br/>
-	Twitter : <a href="http://twitter.com/jmolivas" target="_blank">@jmolivas </a> <br/>
+	Created by Jesus Manuel Olivas | <a href="http://twitter.com/jmolivas" target="_blank">@jmolivas </a>
+	<p><a href="http://jmolivas.com/google-plus-feed/" target="_blank">Web del proyecto</a></p>
 	<a id="more" href="#">more info</a>i
 	<div id="info">
 		<p>
@@ -100,7 +99,7 @@
 	</form>
 
     	<div id="googleplusfeed-widget-wrapper">
-		<iframe id="googleplusfeed-widget-frame" src="http://www.jmolivas.com/googleplusfeed/widget.php" border="1"></iframe>
+		<iframe id="googleplusfeed-widget-frame" src="http://jmolivas.com/googleplusfeed/widget.php" border="1"></iframe>
 	</div> 
 	<p>
 	<textarea id="googleplusfeed-widget-frame-source"></textarea>

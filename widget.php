@@ -103,7 +103,9 @@ else
     </div>
 
     <p>
-	<a href="http://www.scriptol.com/rss/atom-reader.php" target="_blank">Generate Google Plus Feed widget</a>
+	<div id="#generate">	
+		<a href="http://jmolivas.com/googleplusfeed/" target="_blank">Generate Google Plus Feed widget</a>
+	</div>
     </p>
 
   </div> 
