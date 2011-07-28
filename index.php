@@ -51,9 +51,10 @@
   <div id="wrapper-builder">
 
 	<div id ="more-info">
-	Created by Jesus Manuel Olivas | 
-	<a href="http://twitter.com/jmolivas" target="_blank">@jmolivas </a> <br/>
-	<a id="more" href="#">more info</a>
+	Created by Jesus Manuel Olivas<br/> 
+	Web : <a href="http://jmolivas.com" target="_blank">http://jmolivas.com</a> <br/>
+	Twitter : <a href="http://twitter.com/jmolivas" target="_blank">@jmolivas </a> <br/>
+	<a id="more" href="#">more info</a>i
 	<div id="info">
 		<p>
 		Based on : <br/>
@@ -80,29 +81,37 @@
 		http://jmolivas.com/google-plus-feed
 		</a> 
 		<br/>
+		</p><p>
+		Github code : <br/>
+		<a href="https://github.com/jmolivas/googleplusfeed" target="_blank">
+		https://github.com/jmolivas/googleplusfeed
+		</a> 
+		<br/>
 		</p>
 	</div>
 	</div>
 
-	
 	<form id="googleplusfeed-form">
 		<p>
 			<label>Google+ Id : </label>
 			<input type="text" id="plus_id" name="plus_id" value="107277908730749548010" />
-			<button id="form-submit" type="button">Generate</button>
+			<button id="form-submit" type="submit">Generate</button>
 		</p>
 	</form>
 
     	<div id="googleplusfeed-widget-wrapper">
-		<iframe id="googleplusfeed-widget-frame" src="widget.php" border="1">loading...</iframe>
+		<iframe id="googleplusfeed-widget-frame" src="http://www.jmolivas.com/googleplusfeed/widget.php" border="1"></iframe>
 	</div> 
+	<p>
+	<textarea id="googleplusfeed-widget-frame-source"></textarea>
+	</p>
     
   </div>
 
 <script type="text/javascript">
 
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-21900600-1']);
+  _gaq.push(['_setAccount', 'UA-21456041-1']);
   _gaq.push(['_trackPageview']);
 
   (function() {

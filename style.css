@@ -35,6 +35,10 @@
 	line-height:125%;
 }
 
+#more-info {
+	line-height:150%;
+}
+
 #wrapper form {
 	padding-bottom:10px;
 }
@@ -153,10 +157,19 @@ label.error {
 
 
 #googleplusfeed-widget-frame {
-	border:1px;
+	border:1px solid #cacaca;
 	width:320px;
 	height:440px;
 	overflow:hidden;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	clear:both;
 }
+
+#googleplusfeed-widget-frame-source {
+	border:1px solid #cacaca;
+	width:320px;
+	height:60px;
+	clear:both;
+}
+
