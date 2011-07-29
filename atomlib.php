@@ -133,7 +133,7 @@ function Atom_Links($url, $size = 15, $site = 0)
 		if($type == 0) continue;
 		$title = $article["title"];
 		$link = $article["link"];
-		$page .= "<li><a href=\"$link\">$title</a></li>\n";			
+		$page .= "<li><a href=\"$link\" target=\"_blank\">$title</a></li>\n";			
 	}
 
 	$page .="</ul>\n";
