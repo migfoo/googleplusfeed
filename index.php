@@ -53,7 +53,7 @@
 	<div id ="more-info">
 	Created by Jesus Manuel Olivas | <a href="http://twitter.com/jmolivas" target="_blank">@jmolivas </a>
 	<p><a href="http://jmolivas.com/google-plus-feed/" target="_blank">Web del proyecto</a></p>
-	<a id="more" href="#">more info</a>i
+	<a id="more" href="#">more info</a>
 	<div id="info">
 		<p>
 		Based on : <br/>

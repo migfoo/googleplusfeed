@@ -69,16 +69,16 @@ if (isset($data) && !empty($data['name']) && !empty($data['count']) && !empty($d
 ?>
 	<div id="plus_card">
 		<div id="plus_card_image">
-			<a href="<?php echo $data['url']; ?>">
+			<a href="<?php echo $data['url']; ?>" target="_blank">
 				<?php echo '<img src="' . $data['img'] . '" width="80" height="80" />'; ?>
 			</a>
 		</div>
 		<div id="plus_card_name_add_wrapper">
 			<div id="plus_card_name">
-				<a href="<?php echo $data['url']; ?>"><?php echo $data['name'] ?></a>
+				<a href="<?php echo $data['url']; ?>" target="_blank"><?php echo $data['name'] ?></a>
 			</div>
 			<span id="plus_card_add">
-				<a href="<?php echo $data['url']; ?>">Add to circles</a>
+				<a href="<?php echo $data['url']; ?>" target="_blank">Add to circles</a>
 			</span>
 		</div>
 		<div id="plus_card_count">
